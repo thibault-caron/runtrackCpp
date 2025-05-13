@@ -1,32 +1,29 @@
 #include <iostream>
 
-int one()
+void one()
 {
 	int x = 3;
 	int a = x + 5;
    	std::cout << a << std::endl;
-    return 0;
 }
 
-int two()
+void two()
 {
 	int x;
 	int y = 3;
 	int a = x=y + 2;
    	std::cout << a << std::endl;
-    return 0;
 }
 
-int three()
+void three()
 {
 	int x = 5;
 	int y = 5;
 	int a = x==y;
    	std::cout << a << std::endl;
-    return 0;
 }
 
-int four()
+void four()
 {
 	int a = 9;
 	int b = 5;
@@ -34,17 +31,15 @@ int four()
 	int d = 8;
 	a = a<b && c<d;
    	std::cout << a << std::endl;
-    return 0;
 }
 
-int five()
+void five()
 {
 	int i = 9;
 	int n = 5;
 	int p = 6;
 	int a = i++ * (n+p);
    	std::cout << a << std::endl;
-    return 0;
 }
 
 int main()
