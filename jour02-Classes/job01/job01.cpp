@@ -49,6 +49,13 @@ public:
     Pingouin(const std::string& nom = "Pingouin", double vitesseNage = 7.5, double vitesseMarche = 0.5)
         : Aquatique(vitesseNage), Terrestre(vitesseMarche), nom(nom) {}
 
+    // Destructeur (en pratique, n'est pas nécessaire ici car il n'y a rien à nettoyer)
+    ~Pingouin() {
+        // Comme il n'y a pas d'allocation dynamique, ce destructeur est vide
+        // Mais il pourrait être utile pour le débogage
+        std::cout << "Destruction du pingouin " << nom << std::endl;
+    }
+
     // Surcharge des méthodes virtuelles
     void nage() const override {
         std::cout << nom << " nage à " << getVitesseNage() << " m/s" << std::endl;

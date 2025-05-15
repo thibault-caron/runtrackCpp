@@ -1,10 +1,7 @@
 #include <iostream>
 
 int main() {
-    // Création de la variable "number" contenant 2019
     int number = 2019;
-    
-    // Création d'un pointeur vers cette variable
     int *ptr_number = &number;
     
     // Affichage de la valeur de "number" via le pointeur
